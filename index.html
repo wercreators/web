@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>we are creators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="ars_picture_black.png" alt="Abdul Rehman" class="profile-picture">
+        <h1>Make Your Brand Unforgettable</h1>
+        <p>Be unforgettable from the first scroll — earn real trust every time</p>
+        <ul class="benefits">
+            <li>✔️ Hooks so <span class="bold">powerful</span> they make scrolling impossible.</li>
+            <li>✔️ Psychological <span class="bold">triggers</span> that turn views into buyers.</li>
+            <li>✔️ Editing that turns every second into a <span class="bold">dopamine hit.</span></li>
+        </ul>
+    </header>
+
+    <div class="videos">
+        <div class="video-container">
+            <video class="video-player" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="video-title">Educational: business niche</p>
+        </div>
+        <div class="video-container">
+            <video class="video-player" controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="video-title">Head talking: Self-help niche</p>
+        </div>
+        <div class="video-container">
+            <video class="video-player" controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="video-title">Voiceover: Business niche</p>
+        </div>
+    </div>
+
+    <div class="connect-me-section">
+        <a href="https://www.instagram.com/maaz.n.rahman/" class="cta-button" target="_blank">Connect with us</a>
+    </div>
+
+    <section class="social-media-section">
+        <h2>Follow Me</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/maaz.n.rahman/" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/channel/UCG3aK5H9soA-FgPUq30wKjQ" target="_blank">YouTube</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 our Work Showcase</p>
+    </footer>
+
+    <script>
+        // JavaScript to stop other videos when one plays
+        const videos = document.querySelectorAll('.video-player');
+
+        videos.forEach(video => {
+            video.addEventListener('play', () => {
+                videos.forEach(v => {
+                    if (v !== video) {
+                        v.pause();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
