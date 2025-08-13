@@ -5,6 +5,7 @@ body {
     color: #0a0f2c;
     text-align: center;
     line-height: 1.6;
+    letter-spacing: -1px;
 }
 
 /* Header Styling */
